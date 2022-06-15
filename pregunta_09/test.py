@@ -4,7 +4,7 @@ import os
 result = os.popen("cat data.csv | python3 mapper.py | sort | python3 reducer.py").read()
 
 lines = [line.strip().replace("\n", "") for line in result.split("\n")]
-
+print(lines)
 expected = """C   1994-07-27   1	
 C   1991-02-12   2	
 A   1990-07-22   4	
@@ -14,6 +14,7 @@ E   1998-09-14   7
 """.split(
     "\n"
 )
+print(len(expected))
 
 if len(lines) != len(expected):
     raise Exception("Wrong number of lines")
