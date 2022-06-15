@@ -19,7 +19,5 @@ if __name__ == '__main__':
                 sys.stdout.write("{}\t{}\n".format(word_actual, ",".join(list_num)))
             word_actual = word
             list_num =[valor]
-
-
-    list_num.append(valor)
+            
     sys.stdout.write("{}\t{}\n".format(word_actual, ",".join(list_num)))
