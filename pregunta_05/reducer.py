@@ -16,7 +16,7 @@ if __name__ == '__main__':
             total += valor
         else:
             if mes_actual is not None:
-                sys.stdout.write("{},{}\n".format(mes_actual, total))
+                sys.stdout.write("{}\t{}\n".format(mes_actual, total))
 
             mes_actual = mes
             total = valor
