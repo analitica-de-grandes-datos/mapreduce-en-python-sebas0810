@@ -21,4 +21,4 @@ if __name__ == '__main__':
             mes_actual = mes
             total = valor
 
-    sys.stdout.write("{},{}\n".format(mes_actual, total))
+    sys.stdout.write("{}\t{}\n".format(mes_actual, total))

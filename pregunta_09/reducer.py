@@ -10,6 +10,6 @@ if __name__ == '__main__':
         value=int(linea[0].strip())
         word=linea[1].strip()
         fecha=linea[2].strip()
-        sys.stdout.write("{}  {}  {}\n".format(word,fecha,value))
+        sys.stdout.write("{}   {}   {}\n".format(word,fecha,value))
         cont+=1
         if(cont==6):break
